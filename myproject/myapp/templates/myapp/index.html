@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video</title>
+</head>
+<body>
+    <h1>Hi, enter a long text.</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="input_text">Enter Text:</label>
+        <textarea id="input_text" name="input_text" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Generate Video">
+    </form>
+</body>
+</html>
